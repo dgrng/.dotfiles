@@ -1,7 +1,9 @@
 set exrc
 set number
 set autoindent
-set tabstop=4 softtabstop=4
+set shiftwidth=3
+set tabstop=3 softtabstop=3
+set autoindent
 set smartindent
 set scrolloff=8
 "set colorcolumn=80
@@ -46,7 +48,18 @@ map <leader>tk <C-w>t<C-w>K
 
 
 " opening terminal inside VIM
-map <leader>tt :vnew term://fish<CR>
+"map <leader>tt :vnew term://fish<CR>
+map <leader>tt :T<CR>
 
+" nerdtree mapping
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" gitgutter mapping
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+let g:gitgutter_show_msg_on_hunk_jumping = 0
 
 
