@@ -1,3 +1,3 @@
 " MacOS specific config
 
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus

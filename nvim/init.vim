@@ -38,4 +38,3 @@ let mapleader = " "
 
 nnoremap <C-S> :update<cr>
 inoremap <C-S> <Esc>:update<cr>gi
-

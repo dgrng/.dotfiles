@@ -23,6 +23,8 @@ set wildignore+=*/node_modules/*
 set background=dark
 set noswapfile
 
+set clipboard+=unnamedplus
+
 " Give more space for displaying messages.
 set cmdheight=2
 
