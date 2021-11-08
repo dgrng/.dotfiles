@@ -176,11 +176,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
   #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+    background: '#1d1f21'
+    foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -197,9 +197,9 @@ font:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+    cursor:
+      text: '0xf1c1c1' 
+        #cursor: '0xff2600'
 
   # Vi mode cursor colors
   #
@@ -419,8 +419,8 @@ font:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
- program: /usr/local/bin/fish
+#shell:
+  #program: /usr/local/bin/fish
 #  args:
 #    - --login
 
@@ -433,7 +433,7 @@ shell:
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-#mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
@@ -443,7 +443,7 @@ shell:
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  #hide_when_typing: false
+  hide_when_typing: true 
 
 # Regex hints
 #

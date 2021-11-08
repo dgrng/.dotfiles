@@ -1,6 +1,7 @@
 set exrc
 set number
 set autoindent
+set title
 set shiftwidth=3
 set tabstop=3 softtabstop=3
 set autoindent
@@ -17,13 +18,13 @@ set incsearch
 
 set path+=**
 set wildmenu
-set wildignore+=**/node_modules/**
+set wildignore+=*/node_modules/*
+
+set background=dark
+set noswapfile
 
 " Give more space for displaying messages.
 set cmdheight=2
-
-set background=dark
-
 
 set mouse=nicr
 
@@ -48,18 +49,17 @@ map <leader>tk <C-w>t<C-w>K
 
 
 " opening terminal inside VIM
-"map <leader>tt :vnew term://fish<CR>
-map <leader>tt :T<CR>
+map <leader>tt :sp term://fish<CR>
+"map <leader>tt :T<CR>
 
 " nerdtree mapping
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-m> :NERDTree<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " gitgutter mapping
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 let g:gitgutter_show_msg_on_hunk_jumping = 0
-
 

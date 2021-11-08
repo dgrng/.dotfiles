@@ -24,8 +24,15 @@ call plug#end()
 
 " Plugins end
 
-colorscheme vimdark 
+colorscheme gruvbox 
 highlight Normal guibg=none
+
+if has("unix")
+   let s:uname = system("uname -s")
+   if s:uname == "Darwin\n"
+      runtime ./mac.vim
+   endif
+endif
 
 let mapleader = " "
 
@@ -33,13 +40,6 @@ nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-
-autocmd BufWritePre *.go lua goimports(1000)
-
-" terminal
-tnoremap <Esc> <C-\><C-n>
-command! -nargs=* T split | wincmd j | resize 20 | terminal <args>
-autocmd TermOpen * startinsert
 
 nnoremap <C-S> :update<cr>
 inoremap <C-S> <Esc>:update<cr>gi
