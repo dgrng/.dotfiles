@@ -65,3 +65,7 @@ nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 let g:gitgutter_show_msg_on_hunk_jumping = 0
 
+" buffers keymapping
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+
