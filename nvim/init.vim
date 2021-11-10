@@ -5,10 +5,8 @@ call plug#begin("~/.vim/plugged")
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'gruvbox-community/gruvbox'
 Plug 'neovim/nvim-lspconfig'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
 Plug 'github/copilot.vim'
@@ -17,14 +15,16 @@ Plug 'airblade/vim-gitgutter'
 Plug 'hrsh7th/nvim-compe'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ldelossa/vimdark'
-Plug 'kadekillary/skull-vim'
-
+Plug 'sainnhe/gruvbox-material'
 call plug#end()
 
 " Plugins end
 
-colorscheme gruvbox 
+syntax enable
+set background=dark
+let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_enable_italic = 1
+colorscheme gruvbox-material 
 highlight Normal guibg=none
 
 if has("unix")

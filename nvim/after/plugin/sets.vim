@@ -20,7 +20,6 @@ set path+=**
 set wildmenu
 set wildignore+=*/node_modules/*
 
-set background=dark
 set noswapfile
 
 set clipboard+=unnamedplus
