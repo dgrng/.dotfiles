@@ -155,8 +155,20 @@ nvim_lsp.tsserver.setup {
 nvim_lsp.rust_analyzer.setup{
    on_attach = on_attach
 }
+nvim_lsp.dartls.setup{
+   on_attach = on_attach,
+   capabilities = capabilities,
+   filetypes = { "dart" }
+}
+nvim_lsp.ccls.setup {
+   init_options = {
+      directory = ".ccls-cache";
+      compilationDatabaseDirectory = "build";
+   }
+}
 
 EOF
+
 
 "autocmd BufWritePre *.go lua goimports(1000)
 "autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
