@@ -1,3 +1,8 @@
+# Window configuration
+window:
+  decorations: none 
+  opacity: 0.75
+
 # Font configuration
 font:
   normal:
@@ -44,3 +49,7 @@ colors:
     white:   '0xfeffff'
 mouse:
   hide_when_typing: true 
+
+# key bindings
+key_bindings:
+  - {key: F, mods: Command, action: ToggleFullScreen }
