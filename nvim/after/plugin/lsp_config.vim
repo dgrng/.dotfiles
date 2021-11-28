@@ -161,6 +161,8 @@ nvim_lsp.dartls.setup{
    filetypes = { "dart" }
 }
 nvim_lsp.ccls.setup {
+   on_attach = on_attach,
+	capabilities = capabilities,
    init_options = {
       directory = ".ccls-cache";
       compilationDatabaseDirectory = "build";

@@ -54,8 +54,8 @@ map <leader>tt :sp term://fish<CR>
 "map <leader>tt :T<CR>
 
 " nerdtree mapping
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-m> :NERDTree<CR>
+"nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-m> :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
