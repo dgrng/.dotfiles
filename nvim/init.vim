@@ -17,6 +17,9 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sainnhe/gruvbox-material'
+
+Plug 'buoto/gotests-vim'
+
 call plug#end()
 
 " Plugins end
