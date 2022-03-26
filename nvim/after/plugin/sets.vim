@@ -71,4 +71,4 @@ nnoremap <leader>bd :bd<CR>
 
 " generate go test
 nnoremap <leader>ggt :GoTests<CR>
-
+nnoremap <leader>gmt :make test<CR>
