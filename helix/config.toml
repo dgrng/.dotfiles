@@ -1,0 +1,11 @@
+# theme
+"theme" = "gruvbox-mod"
+
+# keybindings
+[keys.normal]
+"{" = "half_page_up"
+"}" = "half_page_down"
+"y" = ":clipboard-yank"
+"p" = ":clipboard-paste-after"
+"P" = ":clipboard-paste-before"
+"D" = ["extend_line", "delete_selection"]
