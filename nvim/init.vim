@@ -3,6 +3,7 @@
 
 call plug#begin("~/.vim/plugged")
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'neovim/nvim-lspconfig'
@@ -13,8 +14,8 @@ Plug 'github/copilot.vim'
 Plug 'windwp/nvim-autopairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'hrsh7th/nvim-compe'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'preservim/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sainnhe/gruvbox-material'
 
 Plug 'buoto/gotests-vim'
