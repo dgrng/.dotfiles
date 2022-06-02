@@ -18,7 +18,13 @@ set incsearch
 
 set path+=**
 set wildmenu
+set wildmode=longest,list,full
+
 set wildignore+=*/node_modules/*
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/coverage/*
+set wildignore+=**/.git/*
 
 set noswapfile
 
