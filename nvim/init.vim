@@ -18,6 +18,11 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sainnhe/gruvbox-material'
 
+" debug
+Plug 'mfussenegger/nvim-dap'
+Plug 'leoluz/nvim-dap-go'
+Plug 'rcarriga/nvim-dap-ui'
+
 Plug 'buoto/gotests-vim'
 
 call plug#end()
