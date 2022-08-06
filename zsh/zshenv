@@ -1,0 +1,20 @@
+# Envs
+
+# XDG Configs
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
+export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+
+# Editor
+export EDITOR="nvim"
+
+# zsh config
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# workdir
+export PROJECT="$HOME/projects"
+export WORKDIR="$PROJECT"
+
+# golang
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"

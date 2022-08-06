@@ -1,0 +1,8 @@
+# editor
+alias vi='nvim'
+alias vim='nvim'
+
+# exa
+alias ls='exa --icons'
+alias ll='exa --icons -l'
+alias lla='exa --icons -la'
