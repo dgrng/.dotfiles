@@ -22,4 +22,4 @@ export PATH="$GOPATH/bin:$PATH"
 
 # npm
 export NPM_CONFIG_PREFIX="$XDG_CONFIG_HOME/npm/"
-export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
+export PATH="${NPM_CONFIG_PREFIX}bin:$PATH"
