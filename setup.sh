@@ -10,20 +10,20 @@ mkdir -p "$XDG_CONFIG_HOME"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 mkdir -p "$ZDOTDIR"
 
-ln -sf "$DOTFILES/zsh/zshenv" "$HOME/.zshenv"
-ln -sf "$DOTFILES/zsh/zprofile" "$ZDOTDIR/.zprofile"
-ln -sf "$DOTFILES/zsh/zshrc" "$ZDOTDIR/.zshrc"
-ln -sf "$DOTFILES/zsh/extra" "$ZDOTDIR/extra"
+ln -sfn "$DOTFILES/zsh/zshenv" "$HOME/.zshenv"
+ln -sfn "$DOTFILES/zsh/zprofile" "$ZDOTDIR/.zprofile"
+ln -sfn "$DOTFILES/zsh/zshrc" "$ZDOTDIR/.zshrc"
+ln -sfn "$DOTFILES/zsh/extra" "$ZDOTDIR/extra"
 
 ## neovim
-ln -sf "$DOTFILES/nvim" "$XDG_CONFIG_HOME/nvim"
+ln -sfn "$DOTFILES/nvim" "$XDG_CONFIG_HOME/nvim"
 
 ## alacritty
-ln -sf $DOTFILES/alacritty $XDG_CONFIG_HOME/alacritty
+ln -sfn $DOTFILES/alacritty $XDG_CONFIG_HOME/alacritty
 
 ## tmux
-ln -sf "$DOTFILES/tmux" "$XDG_CONFIG_HOME/tmux"
+ln -sfn "$DOTFILES/tmux" "$XDG_CONFIG_HOME/tmux"
 
 ## i3
-ln -sf "$DOTFILES/i3" "$XDG_CONFIG_HOME/i3"
-ln -sf "$DOTFILES/i3status" "$XDG_CONFIG_HOME/i3status"
+ln -sfn "$DOTFILES/i3" "$XDG_CONFIG_HOME/i3"
+ln -sfn "$DOTFILES/i3status" "$XDG_CONFIG_HOME/i3status"
