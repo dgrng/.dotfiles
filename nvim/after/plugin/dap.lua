@@ -15,7 +15,27 @@ vim.keymap.set("n", "<leader>du", ":lua require'dapui'.toggle()<CR>")
 
 -- setups
 require("dap-go").setup()
-require("dapui").setup()
+require("dapui").setup({
+   layouts = {
+      {
+         elements = {
+            { id = "scopes", size = 0.5},
+            "breakpoints",
+            "stacks",
+         },
+         size = 45,
+         position = "left",
+      },
+      {
+         elements = {
+            "watches",
+            "repl",
+         },
+         size = 0.25,
+         position = "bottom",
+      }
+   }
+})
 
 -- listeners
 local dap, dapui = require("dap"), require("dapui")
