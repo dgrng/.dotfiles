@@ -27,3 +27,5 @@ ln -sfn "$DOTFILES/tmux" "$XDG_CONFIG_HOME/tmux"
 ## i3
 ln -sfn "$DOTFILES/i3" "$XDG_CONFIG_HOME/i3"
 ln -sfn "$DOTFILES/i3status" "$XDG_CONFIG_HOME/i3status"
+
+ln -sfn "$DOTFILES/bat" "$XDG_CONFIG_HOME/bat"
