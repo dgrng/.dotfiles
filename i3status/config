@@ -12,10 +12,10 @@ general {
 }
 
 order += "volume master"
+order += "load"
 order += "memory"
 order += "disk /"
 order += "wireless _first_"
-order += "load"
 order += "tztime local"
 
 volume master {
@@ -33,14 +33,15 @@ wireless _first_ {
         format_down = "W: down"
 }
 
-tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
-}
-
 load {
-        format = "%1min"
+        format = "cpu:%1min%"
 }
 
 disk "/" {
         format = "%avail"
 }
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
