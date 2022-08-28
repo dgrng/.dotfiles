@@ -9,3 +9,5 @@ if type brew &>/dev/null; then
 fi
 autoload -Uz compinit; compinit
 autoload -Uz ${ZDOTDIR}/extra/prompt; prompt
+
+setopt HIST_SAVE_NO_DUPS
