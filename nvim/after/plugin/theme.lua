@@ -1,11 +1,11 @@
-require('nightfox').setup({
-  options = {
-    styles = {
-      comments = "italic",
+-- require('nightfox').setup({
+--  options = {
+--    styles = {
+--      comments = "italic",
       -- keywords = "bold",
-      types = "italic,bold",
-    }
-  }
-})
+--      types = "italic,bold",
+--    }
+--  }
+--})
 
-vim.cmd("colorscheme nordfox")
+--vim.cmd("colorscheme nordfox")

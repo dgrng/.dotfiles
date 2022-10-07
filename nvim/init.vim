@@ -18,8 +18,7 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'vim-airline/vim-airline'
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'sainnhe/gruvbox-material'
-Plug 'EdenEast/nightfox.nvim'
+Plug 'sainnhe/gruvbox-material'
 
 " debug
 Plug 'mfussenegger/nvim-dap'
@@ -34,7 +33,10 @@ call plug#end()
 
 syntax enable
 
-colorscheme nordfox 
+let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_better_performance = 1
+let g:gruvbox_material_foreground = 'mix'
+colorscheme gruvbox-material
 
 if has("unix")
    let s:uname = system("uname -s")
