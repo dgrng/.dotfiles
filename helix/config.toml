@@ -1,10 +1,8 @@
 # theme
-"theme" = "gruvbox-mod"
+"theme" = "ayu_mirage"
 
 # keybindings
 [keys.normal]
-"{" = "half_page_up"
-"}" = "half_page_down"
 "y" = ":clipboard-yank"
 "p" = ":clipboard-paste-after"
 "P" = ":clipboard-paste-before"
