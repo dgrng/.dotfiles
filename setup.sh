@@ -24,6 +24,8 @@ ln -sfn $DOTFILES/alacritty $XDG_CONFIG_HOME/alacritty
 ## tmux
 ln -sfn "$DOTFILES/tmux" "$XDG_CONFIG_HOME/tmux"
 
+ln -sfn "$DOTFILES/helix" "$XDG_CONFIG_HOME/helix"
+
 ## i3
 ln -sfn "$DOTFILES/i3" "$XDG_CONFIG_HOME/i3"
 ln -sfn "$DOTFILES/i3status" "$XDG_CONFIG_HOME/i3status"
