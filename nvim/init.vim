@@ -8,6 +8,7 @@ Plug 'nvim-treesitter/nvim-treesitter-context'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
