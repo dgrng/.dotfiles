@@ -1,6 +1,6 @@
 # Window configuration
 window:
-  decorations: full 
+  decorations: none 
   opacity: 0.75
 
 # Font configuration
