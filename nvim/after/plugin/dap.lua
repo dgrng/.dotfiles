@@ -16,6 +16,7 @@ vim.keymap.set("n", "<leader>du", ":lua require'dapui'.toggle()<CR>")
 -- setups
 require("dap-go").setup()
 require("dapui").setup({
+   icons= { expanded = "↓", collapsed = "→" , current_frame = "current"},
    layouts = {
       {
          elements = {
