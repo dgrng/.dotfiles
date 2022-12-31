@@ -1,5 +1,3 @@
--- keymappings for debug
---
 vim.keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>") 
 vim.keymap.set("n", "<F3>", ":lua require'dap'.step_over()<CR>")
 vim.keymap.set("n", "<F2>", ":lua require'dap'.step_into()<CR>")
