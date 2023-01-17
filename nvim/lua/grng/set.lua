@@ -4,6 +4,7 @@ vim.opt.fileencoding = 'utf-8'
 
 vim.opt.relativenumber = true
 vim.opt.guicursor = ""
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.nu = true
 
