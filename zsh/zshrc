@@ -11,3 +11,13 @@ autoload -Uz compinit; compinit
 autoload -Uz ${ZDOTDIR}/extra/prompt; prompt
 
 setopt HIST_SAVE_NO_DUPS
+
+# rust
+if [ -f $HOME/.cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
+
+# machine specific
+if [ -f $HOME/.grgrc  ]; then
+   source $HOME/.grgrc
+fi

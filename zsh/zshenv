@@ -2,8 +2,8 @@
 
 # XDG Configs
 export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
-export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.local/cache"
 
 # Editor
 export EDITOR="nvim"
@@ -12,10 +12,6 @@ export DOTFILES="$HOME/.dotfiles"
 # zsh config
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
-# workdir
-export PROJECT="$HOME/projects"
-export WORKDIR="$PROJECT"
-
 # golang
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
@@ -23,4 +19,3 @@ export PATH="$GOPATH/bin:$PATH"
 # npm
 export NPM_CONFIG_PREFIX="$XDG_CONFIG_HOME/npm/"
 export PATH="${NPM_CONFIG_PREFIX}bin:$PATH"
-. "$HOME/.cargo/env"
