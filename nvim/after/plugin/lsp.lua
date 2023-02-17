@@ -84,6 +84,11 @@ mason_config.setup_handlers({
     end,
 })
 
+lspconfig.zls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
 require("lsp_signature").setup({
     bind = true,
     handler_opts = {
