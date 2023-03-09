@@ -9,7 +9,7 @@ keymap.set('n', 'x', '"_x')
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- buffers
-keymap.set('n', 'bn', ':bn<Return>')
-keymap.set('n', 'bp', ':bp<Return>')
-keymap.set('n', 'bd', ':bd<Return>')
+keymap.set('n', '<leader>bn', ':bn<Return>')
+keymap.set('n', '<space>bp', ':bp<Return>')
+keymap.set('n', '<space>bd', ':bd<Return>')
 keymap.set('i', '¥', '\\')

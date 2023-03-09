@@ -4,19 +4,32 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
+    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    -- use({
+    --     'sainnhe/gruvbox-material',
+    --     config = function()
+    --         vim.o.background = "dark"
+    --         vim.g.gruvbox_material_background = 'hard'
+    --         vim.g.gruvbox_material_better_performance = 1
+    --         vim.cmd('colorscheme gruvbox-material')
+    --     end
+    -- })
+
     use({
-        'sainnhe/gruvbox-material',
+        'projekt0n/github-nvim-theme',
+        tag = 'v0.0.7',
         config = function()
-            vim.o.background = "dark"
-            vim.g.gruvbox_material_background = 'hard'
-            vim.g.gruvbox_material_better_performance = 1
-            vim.cmd('colorscheme gruvbox-material')
+            require('github-theme').setup({
+                theme_style = "dimmed",
+                transparent = true,
+            })
         end
     })
 
@@ -25,16 +38,14 @@ return require('packer').startup(function(use)
         config = function()
             require("lualine").setup({
                 options = {
-                    theme = 'gruvbox-material'
+                    theme = 'nord'
                 }
             })
         end
     })
 
-    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/nvim-treesitter-context')
     use('nvim-treesitter/playground')
-
 
     -- lsp
     use({
@@ -68,5 +79,4 @@ return require('packer').startup(function(use)
     use('mfussenegger/nvim-dap')
     use('leoluz/nvim-dap-go')
     use('rcarriga/nvim-dap-ui')
-
 end)
