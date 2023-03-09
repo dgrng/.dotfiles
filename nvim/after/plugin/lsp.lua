@@ -10,9 +10,9 @@ cmp.setup({
         end,
     },
     mapping = cmp.mapping.preset.insert({
-        ['<C-Space>'] = cmp.mapping.complete(),
-        ['<C-e>'] = cmp.mapping.abort(),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+            ['<C-Space>'] = cmp.mapping.complete(),
+            ['<C-e>'] = cmp.mapping.abort(),
+            ['<CR>'] = cmp.mapping.confirm({ select = true }),
     }),
     sources = cmp.config.sources(
         {
@@ -64,8 +64,8 @@ mason_config.setup_handlers({
             capabilities = capabilities,
         })
     end,
-    ["sumneko_lua"] = function()
-        lspconfig.sumneko_lua.setup {
+        ["lua_ls"] = function()
+        lspconfig.lua_ls.setup {
             on_attach = on_attach,
             settings = {
                 Lua = {
@@ -74,8 +74,8 @@ mason_config.setup_handlers({
                     },
                     workspace = {
                         library = {
-                            [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-                            [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true
+                                [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+                                [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true
                         }
                     }
                 }
