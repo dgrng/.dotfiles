@@ -29,6 +29,15 @@ return require('packer').startup(function(use)
             require('github-theme').setup({
                 theme_style = "dimmed",
                 transparent = true,
+                colors = {
+                    syntax = {
+                        keyword = '#d16b64',
+                        string = '#91bae3',
+                        constant = '#91bae3',
+                        variable = '#91bae3',
+                        json_label = '#91bae3',
+                    }
+                }
             })
         end
     })
