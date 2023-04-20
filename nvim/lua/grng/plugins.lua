@@ -12,33 +12,13 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    -- use({
-    --     'sainnhe/gruvbox-material',
-    --     config = function()
-    --         vim.o.background = "dark"
-    --         vim.g.gruvbox_material_background = 'hard'
-    --         vim.g.gruvbox_material_better_performance = 1
-    --         vim.cmd('colorscheme gruvbox-material')
-    --     end
-    -- })
-
     use({
-        'projekt0n/github-nvim-theme',
-        tag = 'v0.0.7',
+        'sainnhe/gruvbox-material',
         config = function()
-            require('github-theme').setup({
-                theme_style = "dimmed",
-                transparent = true,
-                colors = {
-                    syntax = {
-                        keyword = '#d16b64',
-                        string = '#91bae3',
-                        constant = '#91bae3',
-                        variable = '#91bae3',
-                        json_label = '#91bae3',
-                    }
-                }
-            })
+            vim.o.background = "dark"
+            vim.g.gruvbox_material_background = 'hard'
+            vim.g.gruvbox_material_better_performance = 1
+            vim.cmd('colorscheme gruvbox-material')
         end
     })
 
@@ -47,7 +27,7 @@ return require('packer').startup(function(use)
         config = function()
             require("lualine").setup({
                 options = {
-                    theme = 'nord'
+                    theme = 'gruvbox'
                 }
             })
         end
