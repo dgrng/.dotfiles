@@ -33,5 +33,5 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
 
-vim.opt.wildignore:append { '*/node_modules/*', '*.pyc', '*_build/*', '**/.git/*' }
+vim.opt.wildignore:append { '*/node_modules/*', '*.pyc', '*_build/*', '**/.git/*', '**/zig-cache/*', '**/zig-out/*' }
 vim.opt.title = true
