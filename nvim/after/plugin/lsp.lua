@@ -86,6 +86,26 @@ mason_config.setup_handlers({
         }
     end,
 })
+lspconfig.rust_analyzer.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+        imports = {
+            granularity = {
+                group = "module",
+            },
+            prefix = "self",
+        },
+        cargo = {
+            buildScripts = {
+                enable = true,
+            },
+        },
+        procMacro = {
+            enable = true
+        },
+    }
+})
 
 lspconfig.zls.setup({
     on_attach = on_attach,
