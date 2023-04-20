@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
             require('github-theme').setup({
                 theme_style = "dimmed",
                 transparent = true,
+                keyword_style = "bold",
             })
         end
     })
