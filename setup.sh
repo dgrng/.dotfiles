@@ -33,3 +33,7 @@ ln -sfn "$DOTFILES/i3status" "$XDG_CONFIG_HOME/i3status"
 ln -sfn "$DOTFILES/bat" "$XDG_CONFIG_HOME/bat"
 ln -sfn "$DOTFILES/picom" "$XDG_CONFIG_HOME/picom"
 ln -sfn "$DOTFILES/rofi" "$XDG_CONFIG_HOME/rofi"
+
+## mac
+ln -sfn "$DOTFILES/yabai" "$XDG_CONFIG_HOME/yabai"
+ln -sfn "$DOTFILES/skhd" "$XDG_CONFIG_HOME/skhd"
