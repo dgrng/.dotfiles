@@ -43,10 +43,11 @@ Group.new('Define', colors.purple, nil, styles.italic)
 Group.new('Conditional', colors.red, nil, styles.bold + styles.italic)
 Group.new('Repeat', colors.red, nil, styles.italic)
 Group.new('Keyword', colors.red, nil, styles.bold + styles.italic)
-Group.new('Typedef', colors.red, nil, styles.italic)
+Group.new('Typedef', colors.orange, nil, nil)
 Group.new('Exception', colors.red, nil, styles.italic)
 Group.new('Statement', colors.red, nil, styles.italic)
-Group.new('Function', colors.red, nil, styles.bold)
+Group.new('Function', colors.green, nil, nil)
+Group.new('Type', colors.orange, nil, styles.bold)
 
 
 Group.new('Error', colors.red, nil, nil)
@@ -102,6 +103,8 @@ Group.new("@function", groups.Function, groups.Function, groups.Function)
 Group.new("@function.call", groups.Function, groups.Function, groups.Function + styles.italic)
 Group.new("@method", groups.Function, groups.Function, groups.Function)
 Group.new("@method.call", groups.Function, groups.Function, groups.Function + styles.italic)
+Group.new("@type", groups.Type, groups.Type, groups.Type)
+Group.new("@lsp.type.type", groups.Type, groups.Type, groups.Type)
 
 
 -- nvim.cmp
