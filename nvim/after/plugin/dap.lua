@@ -11,8 +11,6 @@ vim.keymap.set("n", "<leader>dq", ":lua require'dap'.terminate()<CR>")
 -- ui keymap
 vim.keymap.set("n", "<leader>du", ":lua require'dapui'.toggle()<CR>")
 
--- setups
-require("dap-go").setup()
 require("dapui").setup({
     icons = { expanded = "↓", collapsed = "→", current_frame = "current" },
     layouts = {
@@ -47,3 +45,43 @@ end
 dap.listeners.after.event_exited["dapui_config"] = function()
     dapui.close()
 end
+
+
+dap.adapters.go = {
+    type = 'server',
+    port = '${port}',
+    executable = {
+        command = 'dlv',
+        args = { 'dap', '-l', '127.0.0.1:${port}' },
+    }
+}
+
+dap.configurations.go = {
+    {
+        type = "go",
+        name = "Debug Package",
+        request = "launch",
+        program = "${workspaceFolder}",
+    },
+    {
+        type = "delve",
+        name = "Debug",
+        request = "launch",
+        program = "${file}"
+    },
+    {
+        type = "delve",
+        name = "Debug test", -- configuration for debugging test files
+        request = "launch",
+        mode = "test",
+        program = "${file}"
+    },
+    -- works with go.mod packages and sub packages
+    {
+        type = "delve",
+        name = "Debug test (go.mod)",
+        request = "launch",
+        mode = "test",
+        program = "./${relativeFileDirname}"
+    }
+}
