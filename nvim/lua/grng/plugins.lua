@@ -8,11 +8,16 @@ return require('packer').startup(function(use)
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
+        'nvim-telescope/telescope.nvim', tag = '0.1.6',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use({ 'tjdevries/colorbuddy.nvim' })
+    use({
+        'savq/melange-nvim',
+        config = function()
+            vim.cmd.colorscheme 'melange'
+        end
+    })
 
     use({
         'nvim-lualine/lualine.nvim',
@@ -57,6 +62,9 @@ return require('packer').startup(function(use)
         end
     })
 
-    use('mfussenegger/nvim-dap')
-    use('rcarriga/nvim-dap-ui')
+    use({
+        'mfussenegger/nvim-dap',
+        'nvim-neotest/nvim-nio',
+        'rcarriga/nvim-dap-ui',
+    })
 end)
